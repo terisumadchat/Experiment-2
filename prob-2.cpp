@@ -20,9 +20,9 @@ int main()
   cin>>prev;      
   cout<<endl<<"Enter Current Reading: ";
   cin>>current;       
-  cout<<endl<<"do you have any unpaid or outstanding balance? (Press 'Y' or 'N'): ";
+  cout<<endl<<"Do you have any unpaid or outstanding balance? (Press 'Y' or 'N'): ";
   cin>>outstanding_balance;        
-  gallons=current-previous;
+  gallons=current-prev;
   
   
   if (outstanding_balance== 'N')       
@@ -33,7 +33,7 @@ int main()
   {
    bill=(php_per_gallon*gallons)+demand+overdue; 
   }
-  cout<<endl<<"Total Bill="<<bill<<"php"<<endl;    
+  cout<<endl<<"Total Bill = "<<bill<<"php"<<endl;    
 
 getch();
 return 0;
