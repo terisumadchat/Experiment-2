@@ -3,63 +3,65 @@
 #include <iomanip>
 #include <math.h>
 #include <conio.h>
+#include <cmath>
 using namespace std;
 
 int main()
 {
-  double x,y,a,number;
-  int number1;
-  const double c=2.5;
+  double y,v,number;
+  double number1;
+  const double z=2.5;
+  int x;
 
-  cout <<"Input the value of x: ";
+  cout <<"Input x: ";
   cin>> x;
-  cout << "Input the value of y: ";
+  cout << "Input y: ";
   cin>>y;
 
-switch(x<3)
+switch(x)
 {
  case 1: 
   if(y>1&&y<5)
   {
-    a=x*y*c;
-    cout << "A = "<<setw(10)<<a<<setprecision(2);
+    v=x*y*z;
+    cout << "V = "<<setw(10)<<v<<setprecision(2);
   }
   else if (y>=5)
   {
-    a=x+(y/c);
-    cout << "A = "<<setw(10)<<a<<setprecision(2);
+    v=x+(y/z);
+    cout << "V = "<<setw(10)<<v<<setprecision(2);
   }
   else
   {
-    a=x+y+c;
-    cout << "A = "<<setw(10)<<a<<setprecision(2);
+    v=x+y+z;
+    cout << "V = "<<setw(10)<<v<<setprecision(2);
   }
   break;
   
  case 2:
   if(y<=5)
   {
-    number=(x-y)/c;
-    a=abs(number1);
-    cout << "A = "<<setw(10)<<a<<setprecision(2);
+    number1=(x-y)/z;
+    v=abs(number1);
+    cout << "V = "<<setw(10)<<v<<setprecision(2);
   }
   else if (y>5)
   {
-    number=sqrt(x+c);
-    a=x-number;
-    cout << "A = "<<setw(10)<<a<<setprecision(2);
+    number=sqrt(y+z);
+    v=x-number;
+    cout << "V = "<<setw(10)<<v<<setprecision(2);
   }
   else
   {
-    a=x+y+c;
-    cout << "A = "<<setw(10)<<a<<setprecision(2);
+    v=x+y+z;
+    cout << "V = "<<setw(10)<<v<<setprecision(2);
   }
   break;
 
 
  default:
-  a=x+y+c;
-  cout << "A is equal to:"<<setw(10)<<a<<setprecision(2);
+  v=x+y+z;
+  cout << "V is equal to:"<<setw(10)<<v<<setprecision(2);
 }
   
 getch();
